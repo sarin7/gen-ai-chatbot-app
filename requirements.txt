@@ -1,0 +1,4 @@
+google-generativeai==0.8.4
+gradio==5.13.2
+pillow==11.1.0
+python-dotenv==1.0.1
