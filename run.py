@@ -1,4 +1,3 @@
-
 import os
 import PIL.Image
 import gradio as gr
@@ -37,7 +36,6 @@ def llm_response(history,text,img):
         response = txt_model.generate_content(text)
         history += [(None,response.text)]
         return history
-
     else:
         img = PIL.Image.open(img)
         response = vis_model.generate_content([text,img])
